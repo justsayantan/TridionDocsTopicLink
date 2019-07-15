@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/Imports">
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/PublicationOutput.svc?xsd=xsd0" namespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/PublicationOutput.svc?xsd=xsd2" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/PublicationOutput.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/PublicationOutput.svc?xsd=xsd3" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API20/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PublicationOutput_Create_InputMessage">
+    <wsdl:part name="parameters" element="tns:Create" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Create_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q1:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_CancelPublish_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelPublish" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_CancelPublish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelPublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_CancelPublish_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q2:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_CancelPublishByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelPublishByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_CancelPublishByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelPublishByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_CancelPublishByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q3:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Delete_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q4:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_DeleteByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_DeleteByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_DeleteByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q5:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_SetMetaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMetaData" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_SetMetaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMetaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_SetMetaData_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q6:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_SetMetaDataByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMetaDataByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_SetMetaDataByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMetaDataByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_SetMetaDataByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q7:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Publish_InputMessage">
+    <wsdl:part name="parameters" element="tns:Publish" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Publish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Publish_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q8:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_PublishByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:PublishByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_PublishByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PublishByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_PublishByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q9:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Release_InputMessage">
+    <wsdl:part name="parameters" element="tns:Release" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Release_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Release_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q10:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_ReleaseByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_ReleaseByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_ReleaseByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q11:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Find_InputMessage">
+    <wsdl:part name="parameters" element="tns:Find" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Find_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_Find_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q12:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetMetaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaData" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetMetaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetMetaData_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q13:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_RetrieveMetaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveMetaData" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_RetrieveMetaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveMetaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_RetrieveMetaData_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q14:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReport" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetReport_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q15:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetReportByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetReportByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetReportByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q16:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_RetrieveMetaDataByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveMetaDataByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_RetrieveMetaDataByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveMetaDataByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_RetrieveMetaDataByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q17:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetDataObjectInfoByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataObjectInfoByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetDataObjectInfoByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataObjectInfoByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetDataObjectInfoByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q18:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetNextDataObjectChunkByIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextDataObjectChunkByIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetNextDataObjectChunkByIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextDataObjectChunkByIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicationOutput_GetNextDataObjectChunkByIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q19:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:portType name="PublicationOutput">
+    <wsdl:operation name="Create">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/Create" message="tns:PublicationOutput_Create_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CreateResponse" message="tns:PublicationOutput_Create_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CreateInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_Create_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelPublish">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CancelPublish" message="tns:PublicationOutput_CancelPublish_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CancelPublishResponse" message="tns:PublicationOutput_CancelPublish_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CancelPublishInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_CancelPublish_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelPublishByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CancelPublishByIshLngRef" message="tns:PublicationOutput_CancelPublishByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CancelPublishByIshLngRefResponse" message="tns:PublicationOutput_CancelPublishByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/CancelPublishByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_CancelPublishByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/Delete" message="tns:PublicationOutput_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/DeleteResponse" message="tns:PublicationOutput_Delete_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/DeleteInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_Delete_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/DeleteByIshLngRef" message="tns:PublicationOutput_DeleteByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/DeleteByIshLngRefResponse" message="tns:PublicationOutput_DeleteByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/DeleteByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_DeleteByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMetaData">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/SetMetaData" message="tns:PublicationOutput_SetMetaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/SetMetaDataResponse" message="tns:PublicationOutput_SetMetaData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/SetMetaDataInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_SetMetaData_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMetaDataByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/SetMetaDataByIshLngRef" message="tns:PublicationOutput_SetMetaDataByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/SetMetaDataByIshLngRefResponse" message="tns:PublicationOutput_SetMetaDataByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/SetMetaDataByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_SetMetaDataByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Publish">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/Publish" message="tns:PublicationOutput_Publish_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/PublishResponse" message="tns:PublicationOutput_Publish_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/PublishInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_Publish_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PublishByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/PublishByIshLngRef" message="tns:PublicationOutput_PublishByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/PublishByIshLngRefResponse" message="tns:PublicationOutput_PublishByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/PublishByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_PublishByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Release">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/Release" message="tns:PublicationOutput_Release_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/ReleaseResponse" message="tns:PublicationOutput_Release_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/ReleaseInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_Release_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/ReleaseByIshLngRef" message="tns:PublicationOutput_ReleaseByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/ReleaseByIshLngRefResponse" message="tns:PublicationOutput_ReleaseByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/ReleaseByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_ReleaseByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Find">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/Find" message="tns:PublicationOutput_Find_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/FindResponse" message="tns:PublicationOutput_Find_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/FindInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_Find_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaData">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetMetaData" message="tns:PublicationOutput_GetMetaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetMetaDataResponse" message="tns:PublicationOutput_GetMetaData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetMetaDataInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_GetMetaData_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveMetaData">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/RetrieveMetaData" message="tns:PublicationOutput_RetrieveMetaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/RetrieveMetaDataResponse" message="tns:PublicationOutput_RetrieveMetaData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/RetrieveMetaDataInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_RetrieveMetaData_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReport">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetReport" message="tns:PublicationOutput_GetReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetReportResponse" message="tns:PublicationOutput_GetReport_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetReportInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_GetReport_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetReportByIshLngRef" message="tns:PublicationOutput_GetReportByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetReportByIshLngRefResponse" message="tns:PublicationOutput_GetReportByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetReportByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_GetReportByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveMetaDataByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/RetrieveMetaDataByIshLngRef" message="tns:PublicationOutput_RetrieveMetaDataByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/RetrieveMetaDataByIshLngRefResponse" message="tns:PublicationOutput_RetrieveMetaDataByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/RetrieveMetaDataByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_RetrieveMetaDataByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataObjectInfoByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetDataObjectInfoByIshLngRef" message="tns:PublicationOutput_GetDataObjectInfoByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetDataObjectInfoByIshLngRefResponse" message="tns:PublicationOutput_GetDataObjectInfoByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetDataObjectInfoByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_GetDataObjectInfoByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextDataObjectChunkByIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetNextDataObjectChunkByIshLngRef" message="tns:PublicationOutput_GetNextDataObjectChunkByIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetNextDataObjectChunkByIshLngRefResponse" message="tns:PublicationOutput_GetNextDataObjectChunkByIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/PublicationOutput/GetNextDataObjectChunkByIshLngRefInfoShareFault" name="InfoShareFault" message="tns:PublicationOutput_GetNextDataObjectChunkByIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

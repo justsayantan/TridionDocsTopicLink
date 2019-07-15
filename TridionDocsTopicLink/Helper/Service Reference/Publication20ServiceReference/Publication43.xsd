@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" elementFormDefault="qualified" targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Publication.svc?xsd=xsd3" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API20/" />
+  <xs:element name="Create">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="folderId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Copy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sourceBaseline" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="folderId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sourceBaseline" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMetaData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlMetadata" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequiredCurrentState" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMetaDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetaData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetaDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Find">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API20/" minOccurs="0" name="statusFilter" type="q1:ISHStatusgroup" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveMetaData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveMetaDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

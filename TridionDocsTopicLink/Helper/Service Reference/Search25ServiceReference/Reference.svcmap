@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="47fdbe62-b29a-4497-96fd-9b6b1e4be4a5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Search3.xsd" MetadataType="Schema" ID="75031f70-2953-4d8d-96c7-98532dd21295" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?xsd=xsd0" />
+    <MetadataFile FileName="Search31.xsd" MetadataType="Schema" ID="8adfcf5d-eedd-42d2-a633-191d3257f515" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?xsd=xsd2" />
+    <MetadataFile FileName="Search32.xsd" MetadataType="Schema" ID="12ed3495-ab51-40ad-878e-08154ce30023" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?xsd=xsd3" />
+    <MetadataFile FileName="Search2.wsdl" MetadataType="Wsdl" ID="a5c05151-6920-497b-979e-77589d5740c7" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Search33.xsd" MetadataType="Schema" ID="75cd9835-0dcc-42d2-b4e7-d109e28d1933" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?xsd=xsd1" />
+    <MetadataFile FileName="Search21.wsdl" MetadataType="Wsdl" ID="dc7e8ac3-9ba0-4d7b-9379-da526364153d" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?wsdl" />
+    <MetadataFile FileName="Search1.disco" MetadataType="Disco" ID="a873a22c-8e58-4f9a-8393-0e912651b5e4" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/Search.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

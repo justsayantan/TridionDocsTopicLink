@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="426fddef-62d9-46d3-928e-7f9532feeab9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mecpshp01.global.sdl.corp/InfoShareWS/WCF/API20/Application.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Application.xsd" MetadataType="Schema" ID="93bdaaa7-c143-4fd5-b38c-44d17a725c51" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?xsd=xsd2" />
+    <MetadataFile FileName="Application.wsdl" MetadataType="Wsdl" ID="3d0a1fa7-f3fb-4d60-baa7-fbd90ff54b5a" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?wsdl" />
+    <MetadataFile FileName="Application.disco" MetadataType="Disco" ID="c3992b57-08bf-440d-9a5e-772ebc3bcfed" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?disco" />
+    <MetadataFile FileName="Application1.xsd" MetadataType="Schema" ID="084ef2e6-6af3-4039-a4b2-3ffd88a55dad" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?xsd=xsd0" />
+    <MetadataFile FileName="Application1.wsdl" MetadataType="Wsdl" ID="8d074675-4146-4caf-97d6-0ef8f76808fc" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Application2.xsd" MetadataType="Schema" ID="50d7b9c2-474f-41ac-9689-a071e1e61181" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?xsd=xsd3" />
+    <MetadataFile FileName="Application3.xsd" MetadataType="Schema" ID="383f1e76-23d6-46bf-beba-31b3dc19a760" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/Application.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

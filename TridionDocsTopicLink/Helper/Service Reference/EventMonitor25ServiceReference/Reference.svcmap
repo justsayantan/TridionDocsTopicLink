@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e1a955cc-7c2f-4393-bed2-2da494b0e631" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mecpshp01.global.sdl.corp/InfoShareWS/WCF/API25/EventMonitor.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EventMonitor.xsd" MetadataType="Schema" ID="73ea966e-185a-4bf4-b69b-94edc4256e97" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?xsd=xsd1" />
+    <MetadataFile FileName="EventMonitor1.xsd" MetadataType="Schema" ID="dcce4a22-8a5b-4bc3-8547-7cb8bdf2d569" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?xsd=xsd0" />
+    <MetadataFile FileName="EventMonitor.wsdl" MetadataType="Wsdl" ID="1cc0f0fc-1d1b-49a8-b049-02f365346e02" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?wsdl" />
+    <MetadataFile FileName="EventMonitor.disco" MetadataType="Disco" ID="bbc698e0-ed1d-4ca9-8256-333960d16528" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?disco" />
+    <MetadataFile FileName="EventMonitor2.xsd" MetadataType="Schema" ID="b2fda8f9-96d1-4f0c-8029-b8b3ea95fab0" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?xsd=xsd2" />
+    <MetadataFile FileName="EventMonitor3.xsd" MetadataType="Schema" ID="1a6fe1fe-4c1f-40ea-9b47-9889c5e572fe" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?xsd=xsd3" />
+    <MetadataFile FileName="EventMonitor1.wsdl" MetadataType="Wsdl" ID="53e56cfa-ffab-43ba-a5e2-62a7d4a7ad7a" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="EventMonitor4.xsd" MetadataType="Schema" ID="5dbc5b42-0227-49a7-a79e-c01743b74eae" SourceId="1" SourceUrl="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API25/EventMonitor.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

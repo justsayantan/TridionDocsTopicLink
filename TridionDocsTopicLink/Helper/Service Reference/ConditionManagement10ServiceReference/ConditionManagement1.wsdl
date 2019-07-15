@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://sdl.com/trisoft/2012/06/WebServices/Services/API/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API/Imports">
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API/ConditionManagement.svc?xsd=xsd0" namespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API/ConditionManagement.svc?xsd=xsd2" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API/ConditionManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ConditionManagement_UpdateConditionCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConditionCategories" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_UpdateConditionCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConditionCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_UpdateConditionCategories_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q1:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_UpdateConditionMasterSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConditionMasterSet" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_UpdateConditionMasterSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConditionMasterSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_UpdateConditionMasterSet_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q2:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_CompareConditionCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:CompareConditionCategories" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_CompareConditionCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CompareConditionCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_CompareConditionCategories_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q3:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_CompareConditionLists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CompareConditionLists" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_CompareConditionLists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CompareConditionListsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_CompareConditionLists_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q4:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConditionCategories" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConditionCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionCategories_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q5:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionMasterSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConditionMasterSet" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionMasterSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConditionMasterSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionMasterSet_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q6:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionSynchronisation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConditionSynchronisation" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionSynchronisation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConditionSynchronisationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_GetConditionSynchronisation_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q7:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_SearchInDocuments_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchInDocuments" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_SearchInDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchInDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConditionManagement_SearchInDocuments_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API/" name="detail" element="q8:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:portType name="ConditionManagement">
+    <wsdl:operation name="UpdateConditionCategories">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/UpdateConditionCategories" message="tns:ConditionManagement_UpdateConditionCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/UpdateConditionCategoriesResponse" message="tns:ConditionManagement_UpdateConditionCategories_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/UpdateConditionCategoriesInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_UpdateConditionCategories_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConditionMasterSet">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/UpdateConditionMasterSet" message="tns:ConditionManagement_UpdateConditionMasterSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/UpdateConditionMasterSetResponse" message="tns:ConditionManagement_UpdateConditionMasterSet_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/UpdateConditionMasterSetInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_UpdateConditionMasterSet_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CompareConditionCategories">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/CompareConditionCategories" message="tns:ConditionManagement_CompareConditionCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/CompareConditionCategoriesResponse" message="tns:ConditionManagement_CompareConditionCategories_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/CompareConditionCategoriesInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_CompareConditionCategories_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CompareConditionLists">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/CompareConditionLists" message="tns:ConditionManagement_CompareConditionLists_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/CompareConditionListsResponse" message="tns:ConditionManagement_CompareConditionLists_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/CompareConditionListsInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_CompareConditionLists_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConditionCategories">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionCategories" message="tns:ConditionManagement_GetConditionCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionCategoriesResponse" message="tns:ConditionManagement_GetConditionCategories_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionCategoriesInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_GetConditionCategories_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConditionMasterSet">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionMasterSet" message="tns:ConditionManagement_GetConditionMasterSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionMasterSetResponse" message="tns:ConditionManagement_GetConditionMasterSet_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionMasterSetInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_GetConditionMasterSet_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConditionSynchronisation">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionSynchronisation" message="tns:ConditionManagement_GetConditionSynchronisation_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionSynchronisationResponse" message="tns:ConditionManagement_GetConditionSynchronisation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/GetConditionSynchronisationInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_GetConditionSynchronisation_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchInDocuments">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/SearchInDocuments" message="tns:ConditionManagement_SearchInDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/SearchInDocumentsResponse" message="tns:ConditionManagement_SearchInDocuments_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API/ConditionManagement/SearchInDocumentsInfoShareFault" name="InfoShareFault" message="tns:ConditionManagement_SearchInDocuments_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

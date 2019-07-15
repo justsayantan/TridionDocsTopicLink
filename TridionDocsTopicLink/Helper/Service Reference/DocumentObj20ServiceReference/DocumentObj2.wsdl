@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/Imports">
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/DocumentObj.svc?xsd=xsd0" namespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/DocumentObj.svc?xsd=xsd2" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/DocumentObj.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/DocumentObj.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://mecpshp01.global.sdl.corp/InfoShareWS/Wcf/API20/DocumentObj.svc?xsd=xsd4" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API20/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DocumentObj_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Delete_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q1:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Update_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q2:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_AddShortCut_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddShortCut" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_AddShortCut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddShortCutResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_AddShortCut_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q3:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RemoveShortCut_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveShortCut" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RemoveShortCut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveShortCutResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RemoveShortCut_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q4:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CheckOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOut" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CheckOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CheckOut_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q5:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CheckIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckIn" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CheckIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckInResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CheckIn_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q6:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_UndoCheckOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:UndoCheckOut" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_UndoCheckOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UndoCheckOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_UndoCheckOut_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q7:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_SetMetaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMetaData" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_SetMetaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMetaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_SetMetaData_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q8:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Move_InputMessage">
+    <wsdl:part name="parameters" element="tns:Move" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Move_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Move_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q9:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_StartTranslationMgmt_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartTranslationMgmt" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_StartTranslationMgmt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartTranslationMgmtResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_StartTranslationMgmt_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q10:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetDocObj_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocObj" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetDocObj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetDocObj_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q11:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetPossibleTransitionStates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPossibleTransitionStates" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetPossibleTransitionStates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPossibleTransitionStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetPossibleTransitionStates_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q12:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetMetaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaData" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetMetaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetMetaData_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q13:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrievebyIshLngRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrievebyIshLngRef" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrievebyIshLngRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrievebyIshLngRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrievebyIshLngRef_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q14:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_EvaluateDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:EvaluateDocument" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_EvaluateDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EvaluateDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_EvaluateDocument_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q15:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Create_InputMessage">
+    <wsdl:part name="parameters" element="tns:Create" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Create_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q16:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CreateOrUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdate" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CreateOrUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_CreateOrUpdate_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q17:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetInitialStates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInitialStates" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetInitialStates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInitialStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_GetInitialStates_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q18:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Find_InputMessage">
+    <wsdl:part name="parameters" element="tns:Find" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Find_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_Find_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q19:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveObjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveObjects" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveObjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveObjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveObjects_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q20:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveMetaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveMetaData" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveMetaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveMetaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveMetaData_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q21:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveLatestVersionsInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveLatestVersionsInfo" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveLatestVersionsInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveLatestVersionsInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocumentObj_RetrieveLatestVersionsInfo_InfoShareFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Faults/API20/" name="detail" element="q22:InfoShareFault" />
+  </wsdl:message>
+  <wsdl:portType name="DocumentObj">
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/Delete" message="tns:DocumentObj_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/DeleteResponse" message="tns:DocumentObj_Delete_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/DeleteInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_Delete_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/Update" message="tns:DocumentObj_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/UpdateResponse" message="tns:DocumentObj_Update_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/UpdateInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_Update_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddShortCut">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/AddShortCut" message="tns:DocumentObj_AddShortCut_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/AddShortCutResponse" message="tns:DocumentObj_AddShortCut_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/AddShortCutInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_AddShortCut_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveShortCut">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RemoveShortCut" message="tns:DocumentObj_RemoveShortCut_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RemoveShortCutResponse" message="tns:DocumentObj_RemoveShortCut_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RemoveShortCutInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_RemoveShortCut_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOut">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CheckOut" message="tns:DocumentObj_CheckOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CheckOutResponse" message="tns:DocumentObj_CheckOut_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CheckOutInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_CheckOut_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckIn">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CheckIn" message="tns:DocumentObj_CheckIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CheckInResponse" message="tns:DocumentObj_CheckIn_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CheckInInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_CheckIn_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UndoCheckOut">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/UndoCheckOut" message="tns:DocumentObj_UndoCheckOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/UndoCheckOutResponse" message="tns:DocumentObj_UndoCheckOut_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/UndoCheckOutInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_UndoCheckOut_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMetaData">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/SetMetaData" message="tns:DocumentObj_SetMetaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/SetMetaDataResponse" message="tns:DocumentObj_SetMetaData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/SetMetaDataInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_SetMetaData_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Move">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/Move" message="tns:DocumentObj_Move_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/MoveResponse" message="tns:DocumentObj_Move_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/MoveInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_Move_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartTranslationMgmt">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/StartTranslationMgmt" message="tns:DocumentObj_StartTranslationMgmt_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/StartTranslationMgmtResponse" message="tns:DocumentObj_StartTranslationMgmt_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/StartTranslationMgmtInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_StartTranslationMgmt_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocObj">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetDocObj" message="tns:DocumentObj_GetDocObj_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetDocObjResponse" message="tns:DocumentObj_GetDocObj_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetDocObjInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_GetDocObj_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPossibleTransitionStates">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetPossibleTransitionStates" message="tns:DocumentObj_GetPossibleTransitionStates_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetPossibleTransitionStatesResponse" message="tns:DocumentObj_GetPossibleTransitionStates_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetPossibleTransitionStatesInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_GetPossibleTransitionStates_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaData">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetMetaData" message="tns:DocumentObj_GetMetaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetMetaDataResponse" message="tns:DocumentObj_GetMetaData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetMetaDataInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_GetMetaData_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrievebyIshLngRef">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrievebyIshLngRef" message="tns:DocumentObj_RetrievebyIshLngRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrievebyIshLngRefResponse" message="tns:DocumentObj_RetrievebyIshLngRef_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrievebyIshLngRefInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_RetrievebyIshLngRef_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EvaluateDocument">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/EvaluateDocument" message="tns:DocumentObj_EvaluateDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/EvaluateDocumentResponse" message="tns:DocumentObj_EvaluateDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/EvaluateDocumentInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_EvaluateDocument_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/Create" message="tns:DocumentObj_Create_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CreateResponse" message="tns:DocumentObj_Create_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CreateInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_Create_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdate">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CreateOrUpdate" message="tns:DocumentObj_CreateOrUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CreateOrUpdateResponse" message="tns:DocumentObj_CreateOrUpdate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/CreateOrUpdateInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_CreateOrUpdate_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInitialStates">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetInitialStates" message="tns:DocumentObj_GetInitialStates_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetInitialStatesResponse" message="tns:DocumentObj_GetInitialStates_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/GetInitialStatesInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_GetInitialStates_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Find">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/Find" message="tns:DocumentObj_Find_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/FindResponse" message="tns:DocumentObj_Find_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/FindInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_Find_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveObjects">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveObjects" message="tns:DocumentObj_RetrieveObjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveObjectsResponse" message="tns:DocumentObj_RetrieveObjects_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveObjectsInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_RetrieveObjects_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveMetaData">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveMetaData" message="tns:DocumentObj_RetrieveMetaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveMetaDataResponse" message="tns:DocumentObj_RetrieveMetaData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveMetaDataInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_RetrieveMetaData_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveLatestVersionsInfo">
+      <wsdl:input wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveLatestVersionsInfo" message="tns:DocumentObj_RetrieveLatestVersionsInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveLatestVersionsInfoResponse" message="tns:DocumentObj_RetrieveLatestVersionsInfo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://sdl.com/trisoft/2012/06/WebServices/Services/API20/DocumentObj/RetrieveLatestVersionsInfoInfoShareFault" name="InfoShareFault" message="tns:DocumentObj_RetrieveLatestVersionsInfo_InfoShareFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

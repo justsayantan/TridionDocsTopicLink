@@ -1,0 +1,72 @@
+﻿@model List<TridionDocsTopicLink.Models.Topic>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary list-panel" id="list-panel">
+            <div class="panel-heading list-panel-heading">
+                <h1 class="panel-title list-panel-title">Tridion Docs Topics</h1>
+
+                <button type="button" class="btn btn-default btn-md" id="btnCreateAsset">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Add To CMS
+                </button>
+            </div>
+            <div class="panel-body">
+                <table id="topic_table" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var topic in Model)
+                        {
+                            <tr>
+                                <td><input id="@topic.Id" type="checkbox" name="selectCheckBox" />&nbsp;</td>
+                                <td>@topic.Title</td>
+                                <td>@topic.Author</td>
+                                <td>@topic.Status</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts
+{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#topic_table').DataTable();
+        });
+
+        $('input:checkbox').change(function () {
+            $('input:checkbox').not(this).prop('checked', false);
+        });
+
+        $('#btnCreateAsset').click(function (event) {
+            var topicId;
+            $.each($("input[name='selectCheckBox']:checked"), function () {
+                topicId = $(this).attr('id');
+            });
+            if (topicId != null) {
+                alert("You Have Selected: " + topicId);
+                var fields = window.dialogArguments.getFields();
+                if (fields && fields.length > 0) {
+                    fields[0].setValues([topicId]);
+                }
+            }
+            else {
+                alert("Select a Topic First")
+            }
+
+        });
+    </script>
+
+}

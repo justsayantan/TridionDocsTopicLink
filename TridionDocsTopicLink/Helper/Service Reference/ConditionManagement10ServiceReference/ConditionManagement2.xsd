@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://sdl.com/trisoft/2012/06/WebServices/Services/API/" elementFormDefault="qualified" targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UpdateConditionCategories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlConditionCategories" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConditionCategoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlConditionCategories" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConditionMasterSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlConditionCategories" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConditionMasterSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlConditionCategories" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompareConditionCategories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlOriginalConditionCategory" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlNewConditionCategory" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompareConditionCategoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompareConditionLists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlOriginalConditionList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlNewConditionList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompareConditionListsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlChanges" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionCategories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlConditionCategories" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionCategoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlConditionCategories" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionMasterSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlConditionMasterSet" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionMasterSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlConditionMasterSet" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionSynchronisation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlConditionChanges" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConditionSynchronisationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlConditionChanges" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchInDocuments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="conditionValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlDocuments" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchInDocumentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="returnValue" type="xs:short" />
+        <xs:element minOccurs="0" name="xmlDocuments" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
